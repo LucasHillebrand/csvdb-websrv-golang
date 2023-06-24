@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <title>Admin Dashboard LCDB</title>
+        <link rel="stylesheet" href="./css/pc.css">
+        <script src="./javascript/system.js"></script>
+        <script src="./javascript/LCDB-Clientside.js"></script>
+        <style id="jsSelectStyle"></style>
+        <style id="jsInputStyle"></style>
+        <style id="jsSearch"></style>
+    </head>
+    <body>
+        <div class="header">
+            <div class="Title">
+                <p>LCDB Admin Dashboard</p>
+            </div>
+            <div class="shortLinks">
+                <ul>
+                    <li><a onclick="ChangeWindow('APIMan')">APIMan</a></li>
+                    <li><a onclick="ChangeWindow('DBMan')">DBMan</a></li>
+                    <li><a onclick="ChangeWindow('Login')">Login</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="Login" class="Login mainPage">
+            <div class="LoginForm">
+                <form id="test" onsubmit="return false">
+                    <input type="text" id="APIKEY" placeholder="API Key:">
+                    <input type="submit" value="Login" onclick="Login()">
+                </form>
+            </div>
+        </div>
+        <div id="DBMan" hidden class="DBMan mainPage">
+            <div class="top">
+                <div class="DBs_Tables">
+                    <div class="Databases Box">
+                        <div id="DBs" class="mainItem"></div>
+                        <div class="options">
+                            <ul>
+                                <li><a onclick="AddDB('prev')">Add DB</a></li>
+                                <li><a onclick="RemoveDB('prev')">Remove DB</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="Tables Box">
+                        <div id="tables" class="mainItem"></div>
+                        <div class="options">
+                            <ul>
+                                <li><a onclick="AddTable('prev')">Add Table</a></li>
+                                <li><a onclick="RemoveTable('prev')">Remove Table</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="table">
+                    <div class="Table Box">
+                        <div id="tableBox" class="mainItem"></div>
+                        <div class="options">
+                            <ul>
+                                <li><a onclick="Add(['row','prev'])">Add Row</a></li>
+                                <li><a onclick="Add(['col','prev'])">Add Col</a></li>
+                                <li><a onclick="Search(['row','prev'])">Search Row</a></li>
+                                <li><a onclick="Search(['col','prev'])">Search Column</a></li>
+                                <li><a onclick="remove(['row','prev'])">Remove Row</a></li>
+                                <li><a onclick="remove(['col','prev'])">Remove Col</a></li>
+                                <li><a onclick="replace('prev')">Replace</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="middle">
+                <div id="middle_input" class="main"></div>
+                <div class="opt">
+                    <div id="middle_submit" class="item submit"></div>
+                    <div id="middle_val" class="item values"></div>
+                </div>
+            </div>
+            <div class="console">
+                <div id="responses" class="consoleBox"></div>
+                <div class="inputBox">
+                    <form onsubmit="return false" >
+                        <input id="cmdInp" class="cmd" type="text" placeholder="your command here">
+                        <input class="submit" type="submit" value="Send" onclick="sendCmd()">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="APIMan" hidden class="APIMan mainPage">
+            <div class="top"></div>
+            <div class="bottom">
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+        </div>
+    </body>
+</html>

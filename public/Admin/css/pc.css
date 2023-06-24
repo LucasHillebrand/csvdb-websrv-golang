@@ -1,0 +1,211 @@
+@font-face {
+    font-family: Quicksand;
+    src: url("../fonts/Quicksand-VariableFont_wght.ttf");
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    height: 10%;
+    width: 100%;
+    background-color: #4aca4a;
+}
+
+.header .Title{
+    font-family: Quicksand;
+    width: 80%;
+    height: 100%;
+    font-size: 40px;
+    float: left;
+}
+
+.header .Title p{
+    margin: auto 10px;
+}
+
+.header .shortLinks{
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+
+.header .shortLinks ul{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style-type: none;
+    float: right;
+    position: sticky;
+    top: 15px;
+    right: 25px;
+}
+
+.header .shortLinks a{
+    cursor: pointer;
+}
+
+.Login .LoginForm{
+    width: 20%;
+    height: 10%;
+    position: absolute;
+    left: 40%;
+    right: 40%;
+    top: 40%;
+    bottom: 40%;
+}
+
+.Login .LoginForm input{
+    width: 100%;
+    border: 0;
+}
+.mainPage {
+    height: 90%;
+    width: 100%;
+}
+
+.DBMan .top{
+    height: 50%;
+    width: 100%;
+}
+
+.DBMan .top .DBs_Tables{
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+
+.DBMan .top ul{
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.DBMan .top ul a{
+    cursor: pointer;
+}
+
+.DBMan .top .options ul li{
+    
+    float: left;
+    margin: 0 10px;
+    padding: 0 10px;
+    background-color: #eeeeee;
+}
+
+.DBMan .top .table{
+    width: 80%;
+    height: 100%;
+    float: left;
+}
+
+.DBMan .top .Box .mainItem{
+    height: 80%;
+}
+
+.DBMan .top .Box .options{
+    height: 20%;
+}
+
+.DBMan .top .DBs_Tables .Box{
+    width: 50%;
+    float: left;
+}
+
+.DBMan .top .table .Box{
+    width: 100%;
+}
+
+.DBMan .middle{
+    height: 10%;
+    width: 100%;
+}
+
+.DBMan .middle .main{
+    width: 90%;
+    height: 100%;
+    float: left;
+}
+
+.DBMan .middle .opt{
+    height: 100%;
+    width: 10%;
+    float: left;
+}
+
+.DBMan .middle .opt .item{
+    height: 50%;
+    width: 100%;
+}
+
+.DBMan .console{
+    height: 40%;
+    width: 100%;
+}
+
+.DBMan .console .consoleBox {
+    height: 80%;
+    width: 100%;
+    overflow-y:auto;
+    
+}
+
+.DBMan .console .inputBox{
+    height: 20%;
+    width: 100%;
+}
+
+.DBMan .console .inputBox form{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.DBMan .console .inputBox form .cmd{
+    border: 0;
+    width: 90%;
+    height: 100%;
+    float: left;
+}
+
+.DBMan .console .inputBox form .submit{
+    margin: 0;
+    border: 0;
+    width: 10%;
+    height: 100%;
+    float: left;
+}
+
+.APIMan .top{
+    width: 100%;
+    height: 80%;
+}
+
+.APIMan .bottom{
+    height: 20%;
+    width: 100%;
+}
+
+.APIMan .bottom .box{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.DBMan .top .table .mainItem tr,.DBMan .top .table .mainItem th,.DBMan .top .table .mainItem td {
+    background-color: #dddddd;
+    cursor: pointer;
+}
+
+.DBMan .top .table .mainItem .row_0 {
+    text-align: center;
+    font-size: larger;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
